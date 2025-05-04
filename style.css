@@ -2,10 +2,6 @@ body{
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     color: white;
     background-color: #111827;
-    background-repeat: repeat;     /* repete em todas as direções */
-    background-size: auto;         /* mantém o tamanho original da imagem */
-    background-position: top left; /* começa no canto superior esquerdo */
-
     margin: 0;
     height: 100vh;
 }
