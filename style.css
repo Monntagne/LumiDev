@@ -1,7 +1,7 @@
 body{
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     color: white;
-    background-image: url(/IMG/fundo.jpg);
+    background-color: #111827;
     background-repeat: repeat;     /* repete em todas as direções */
     background-size: auto;         /* mantém o tamanho original da imagem */
     background-position: top left; /* começa no canto superior esquerdo */
@@ -9,9 +9,7 @@ body{
     margin: 0;
     height: 100vh;
 }
-.conteudo{
-    background-color: #11182793;
-}
+
 .menu-suspenso {
     position: fixed;
     top: 0;
