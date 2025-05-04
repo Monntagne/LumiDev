@@ -1,0 +1,470 @@
+body{
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url(/IMG/fundo.jpg);
+    background-repeat: repeat;     /* repete em todas as direções */
+    background-size: auto;         /* mantém o tamanho original da imagem */
+    background-position: top left; /* começa no canto superior esquerdo */
+
+    margin: 0;
+    height: 100vh;
+}
+.conteudo{
+    background-color: #11182793;
+}
+.menu-suspenso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #111827;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.185);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+.menu-suspenso-img-desktop{
+    width: 200px;
+    padding: 10px 40px;
+  
+}
+.menu-suspenso-botao{
+    display: flex;
+    
+    padding: 0px 50px;
+
+}
+.menu-suspenso-button {
+    width: 100px;
+    height: 20px;
+    padding: 15px 5px;
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 9px;
+    border: none;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(45deg, #b46b4c, #c98975, #dba39a);
+    background-size: 200% 200%;
+    background-position: center;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(131, 82, 74, 0.438);
+  }
+  
+  .menu-suspenso-button:hover {
+    transform: scale(1.15);
+    background-position: right center;
+    box-shadow: 0 0 10px rgba(131, 82, 74, 0.438);
+ }
+  
+
+.inicio{
+    display: flex;
+    padding: 80px 0px 0px 0px;
+    display: flex;
+  
+}
+.inicio-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inicio-titulo{
+    display: flex;
+    margin: 10px 0px 5px 0px;
+    justify-content: center;
+    font-size: 80px;   
+  } 
+  .inicio-mensagem{
+    margin: 5px 20px;
+    font-size: 17px;
+    display: flex;
+    
+    
+  }
+  .inicio-img {
+    width: 500px;
+    margin: 0px 10px 0px 0px;
+    transition: transform 0.1s;
+    animation: abelha 0.5s infinite;    
+}
+
+
+
+@keyframes abelha {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-2px, 2px) rotate(-1deg); }
+    75% { transform: translate(2px, 2px) rotate(1deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.menu-botao-orcamento {
+    width: 200px;
+    height: 20px;
+    padding: 20px 5px;
+    margin: 10px 30px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #b46b4c, #c98975, #dba39a);
+    background-size: 200% 200%;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 9px;
+    border: none;
+    transition: transform 0.3s ease, background-position 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #83524a8c;
+}
+
+.menu-botao-orcamento:hover {
+    transform: scale(1.15);
+    background-position: right center;
+    box-shadow: 0 0 10px rgba(131, 82, 74, 0.438);
+}
+
+.menu-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.sobre{
+    padding: 100px 0px 0px 0px;
+    margin: 70px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+ 
+}
+.sobre-img {
+    border-radius: 10px;
+    width: 500px;
+    margin: 0px 30px 0px 30px;
+}
+.sobre-texto{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.sobre-texto-titulo{
+    margin: 5px 20px;
+    font-size: 50px;
+}
+.sobre-texto-mensagem{
+    margin: 5px 20px;
+    font-size: 17px;
+}
+
+
+
+.contato{
+    padding: 100px 0px 0px 0px;
+    margin: 70px 0px 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.contato-img {
+    border-radius: 10px;
+    width: 500px;
+    margin: 0px 30px 0px 30px;
+}
+.contato-texto{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.contato-texto-titulo{
+    margin: 5px 20px;
+    font-size: 45px;
+}
+.contato-texto-mensagem{
+    margin: 5px 20px;
+    font-size: 17px;
+}
+
+
+.contato-img {
+    width: 500px;
+    transition: transform 0.1s;
+    animation: contato-abelha 0.5s infinite;    
+}
+
+
+
+@keyframes contato-abelha {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-2px, 2px) rotate(-1deg); }
+    75% { transform: translate(2px, 2px) rotate(1deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+
+.footer{
+    display: flex;
+    background-color: rgba(88, 88, 88, 0.61);
+    border-radius: 4px;
+    align-items: center;
+}
+.footer-img {
+    border-radius: 2px;
+    width: 100px;
+    height: auto;
+    margin: 5px 30px 5px 30px;
+}
+.footer-redes-sociais-titulo{
+    font-size: 15px;
+    margin: 5px 0px 5px 0px;
+}
+.footer-redes-sociais-geral{
+    height: 15px;
+}
+.footer-redes-sociais-whatsapp,.footer-redes-sociais-instagram, .footer-redes-sociais-facebook, .footer-redes-sociais-linkedIn, .footer-redes-sociais-x{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-redes-sociais-texto{
+    padding: 0px 0px 0px 5px;
+    margin: 5px 0px;
+    font-size: 10px;
+} 
+
+@media (max-width: 850px){
+    .menu-suspenso {
+        position: fixed;
+        top: 0;
+        left: 0;    
+        width: auto;
+        z-index: 1000;
+        background-color: #231b44;
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.185);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+      }
+    .menu-suspenso-img-desktop{
+        width: 100px;
+        padding: 10px 40px;
+      
+    }
+    .menu-suspenso-botao{
+        display: flex;
+        
+        padding: 0px 50px 0px 0px;
+    
+    }
+    .menu-suspenso-button {
+        width: 50px;
+        height: 10px;
+        padding: 15px 5px;
+        margin: 10px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 9px;
+        border: none;
+        transition: all 0.3s ease;
+        background-image: linear-gradient(45deg, #b46b4c, #c98975, #dba39a);
+        background-size: 200% 200%;
+        background-position: center;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(131, 82, 74, 0.438);
+      }
+      
+      .menu-suspenso-button:hover {
+        transform: scale(1.15);
+        background-position: right center;
+        box-shadow: 0 0 10px rgba(131, 82, 74, 0.438);
+     }
+
+
+
+
+     
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px 0px 0px;
+    
+}
+.inicio-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inicio-titulo{
+    display: flex;
+    margin: 70px 0px 5px 0px;
+    justify-content: center;
+    font-size: 40px;   
+  } 
+  .inicio-mensagem{
+    margin: 5px 20px;
+    font-size: 10px;
+    display: flex;
+    
+    
+  }
+  .inicio-img {
+    width: 200px;
+   
+    transition: transform 0.1s;
+    animation: abelha 0.5s infinite;    
+}
+
+
+
+@keyframes abelha {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-2px, 2px) rotate(-1deg); }
+    75% { transform: translate(2px, 2px) rotate(1deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.menu-botao-orcamento {
+    width: 300px;
+    height: 15px;
+    padding: 10px 5px;
+    margin: 10px 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #b46b4c, #c98975, #dba39a);
+    background-size: 200% 200%;
+    background-position: center;
+    color: #ffffff;
+    border-radius: 9px;
+    border: none;
+    transition: transform 0.3s ease, background-position 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #83524a8c;
+}
+
+.menu-botao-orcamento:hover {
+    transform: scale(1.15);
+    background-position: right center;
+    box-shadow: 0 0 10px rgba(131, 82, 74, 0.438);
+}
+
+.menu-botao{
+    display: flex;
+    justify-content: center;
+    font-size: 5px;
+}
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sobre-texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center; 
+  }
+  
+  .sobre-img {
+    width: 100px;
+    margin: 20px 30px; /* Ajustei a margem para dar mais espaço entre os itens */
+  }
+  
+  .sobre-texto-titulo {
+    display: flex;
+    margin: 10px 0px 5px 20px;
+    justify-content: center;
+    font-size: 40px;
+    order: 1; /* Título aparece primeiro */
+  }
+  
+  .sobre-texto-mensagem {
+    margin: 5px 20px;
+    font-size: 10px;
+    display: flex;
+    order: 2; /* O parágrafo aparece depois do título */
+  }
+  
+  .sobre-img {
+    width: 250px;
+    margin: 20px 0px;
+    order: 3; /* A imagem aparece depois do parágrafo */
+  }
+  
+  .menu-botao {
+    order: 4; /* O link vai por último */
+  }
+
+
+
+  .contato{
+    padding: 100px 0px 0px 0px;
+    margin: 70px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+
+.contato-texto{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.contato-texto-titulo{
+    display: flex;
+    margin: 10px 0px 5px 20px;
+    justify-content: center;
+    font-size: 40px;
+    order: 1; /* Título aparece primeiro */
+}
+.contato-texto-mensagem{
+    margin: 5px 20px;
+    font-size: 10px;
+    display: flex;
+    order: 2; /* O parágrafo aparece depois do título */
+  }
+
+
+
+.contato-img {
+    width: 250px;
+    margin: 0px 0px 70px 0px;
+    order: 3; /* A imagem aparece depois do parágrafo */
+    transition: transform 0.1s;
+    animation: contato-abelha 0.5s infinite;    
+}
+
+
+
+@keyframes contato-abelha {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-2px, 2px) rotate(-1deg); }
+    75% { transform: translate(2px, 2px) rotate(1deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+
+
+
+}  
